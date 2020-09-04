@@ -1,21 +1,48 @@
-# 레포지터리 초기 세팅 템플릿
+# Networ Security Codes
 
 ## How To Contribute
 ### commit
-- commit Template 엄수   
-(로컬 환경에서 `git config --local commit.template .github/.gitmessage.txt` 세팅 필요)
-- resolves, see also에 ISSUE 링크시킬것
-- 1 commit 1 작업(히스토리 관리를 위함)
+- Must Follow commit Template   
+(Needs to set `git config --local commit.template .github/.gitmessage.txt` on Local)
+- Should Link Issue at resolves, see also
+- 1 commit 1 Jobs(For history)
 
 ### issue
-- Issues 트래킹을 위해 작업단위로 issue를 생성(ex. ~버그 수정, ~기능 추가)
-- project에 링크 걸것
+- Create issues in units of work(ex. bugfix, ~newFeature)
 
 ### branch
-- gitflow 모델을 사용
-- `feature/(이슈번호)-(작업명)`의 네이밍 으로 브렌치 생성
+- I uses gitflow
+- create branch like `feature/(Issue Number)-(task)`
 
 ### pull request
-- 작업 완료 후 develop로 pull request 작성할 것
-- team 멤버들이 pull request의 리뷰를 끝내야 머지가능
-- project에 링크 걸것
+- should create pull request on develop branch
+- pull request's convention is like commit template
+
+### License
+```
+BSD 2-Clause License
+
+Copyright (c) 2020, always0ne
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
