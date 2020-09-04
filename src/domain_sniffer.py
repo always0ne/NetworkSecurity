@@ -1,15 +1,22 @@
+# Create by always0ne on 2020.09.04
+# Copyright (c) 2020. always0ne. All right reserved.
+
 from scapy.all import *
 from scapy.layers.tls.extensions import *
 from scapy.layers.http import *
 
-interface = "wlp2s0"
+interface = "Your Network Interface"
 	
 def print_host(packet):
+	# Handle HTTP
+	# Catch Host in header data
 	if packet.haslayer(HTTPRequest):
 		print(packet.Host.decode())
+	# Handle HTTPS 
+	# HTTPS (TLS) encrypt all data but expose server name when handshaking
+	# Catch Client Hello Packet and get server_name in extension field 
 	if packet.haslayer(ServerName):
-		tmp =  packet.getlayer(ServerName)
-		print(tmp.servername.decode())
+		print(packet.getlayer(ServerName).servername.decode())
 
 print("[*] Start sniffing...")
 load_layer("tls")
