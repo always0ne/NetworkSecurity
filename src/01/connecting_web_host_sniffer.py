@@ -1,5 +1,4 @@
 # Create by always0ne on 2020.09.04
-# Copyright (c) 2020. always0ne. All right reserved.
 
 from scapy.all import *
 from scapy.layers.tls.extensions import *
