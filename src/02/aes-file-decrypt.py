@@ -1,4 +1,4 @@
-# Create by always0ne on 2020.09.08
+# Created by always0ne on 2020.09.08
 
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA256

@@ -1,4 +1,4 @@
-# Create by always0ne on 2020.09.16
+# Created by always0ne on 2020.09.16
 
 from Crypto.Hash import HMAC
 
